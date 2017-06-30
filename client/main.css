@@ -1,0 +1,9 @@
+/* CSS declarations go here */
+#content {
+    min-height: 75vh;
+}
+
+.lista-msgs{
+    height: 70vh;
+    overflow-y: auto;
+}

@@ -1,0 +1,32 @@
+<template name="listaSalas">
+
+    <div class="row">
+        <h5>Bem Vindo {{ currentUser.username }} </h5>
+    </div>
+    <div class="row">
+        <form id="cadastrarSala" action="">
+            <div class="row">
+                <div class="input-field col s9">
+                    <input placeholder="Digite um titulo para a nova sala" id="titulo" type="text">
+                    
+                </div>      
+                <div class="col s3">
+                    <button type="submit" class="waves-effect waves-light btn right">
+                        Criar Sala
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    
+    <br/><br/>
+    <div class="row">
+
+        <h6>Escolha sua sala:</h6>
+        <div class="collection">
+            {{# each salas }}
+                <a href="/sala/{{ _id }}" class="collection-item">{{ titulo}}</a>
+            {{/ each }}
+        </div>
+    </div>
+</template>

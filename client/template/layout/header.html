@@ -1,0 +1,15 @@
+<template name="header">
+    <nav class="blue">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Chat</a>
+
+            {{# if currentUser }}
+                <div class="right">
+                    <button class="btn waves-effect waves-light" type="button" id="logout">
+                        Logoff
+                    </button>
+                </div>
+            {{/ if }}
+        </div>
+    </nav>
+</template>
