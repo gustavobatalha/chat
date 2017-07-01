@@ -39,7 +39,7 @@ FlowRouter.route('/cadastrar', {
 Template.mainLayout.events({
   'click #logout'() {
     Meteor.logout();
-    FlowRouter.refresh();
+    
   }
 });
 
